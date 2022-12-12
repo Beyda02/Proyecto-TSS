@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="8dp">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="110dp"
+       android:id="@+id/cart_item_background">
+
+       <ImageView
+           android:layout_width="30dp"
+           android:layout_height="30dp"
+           android:src="@drawable/ic_delete"
+           android:id="@+id/delete_icon"
+           android:layout_marginRight="20dp"
+           android:layout_centerVertical="true"
+           android:layout_alignParentRight="true">
+       </ImageView>
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_toLeftOf="@id/delete_icon"
+           android:text="DELETE"
+           android:textColor="@color/black"
+           android:layout_centerVertical="true"
+           android:layout_marginRight="5dp">
+       </TextView>
+   </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/my_border"
+        android:id="@+id/cart_item_foreground"
+        android:layout_margin="15dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/cart_item_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:padding="7dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_launcher_background">
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Plant"
+                android:textSize="18dp"
+                android:id="@+id/cart_item_name"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold">
+            </TextView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="€10"
+                    android:id="@+id/cart_item_price"
+                    android:layout_margin="10dp"
+                    android:textSize="15dp"
+                    android:textStyle="italic">
+                </TextView>
+
+                <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="16dp"
+                    app:textSize="6dp"
+                    android:id="@+id/cart_item_amount"
+                    android:layout_centerVertical="true"
+                    app:backGroundColor="#343B42"
+                    app:textColor="@color/white">
+                </com.cepheuen.elegantnumberbutton.view.ElegantNumberButton>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+
