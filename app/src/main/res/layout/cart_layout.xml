@@ -5,19 +5,19 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/app_background"
+    android:background="#bce7c9"
     android:id="@+id/rootLayout">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/CartToolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        app:titleTextColor="@color/white"
+        android:background="#55b50d"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-        android:background="@drawable/side_nav_bar2">
+        app:titleTextColor="@color/white">
 
     </androidx.appcompat.widget.Toolbar>
     <RelativeLayout
@@ -37,16 +37,18 @@
         </androidx.recyclerview.widget.RecyclerView>
 
         <Button
+            android:id="@+id/checkout_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/checkout_button"
             android:layout_alignParentBottom="true"
-            android:text="proceed to checkout"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="25dp"
             android:background="@drawable/my_border2"
             android:backgroundTint="@color/colorAccountBackground"
-            android:layout_margin="25dp"
-            android:textColor="@color/colorWhite">
-        </Button>
+            android:text="COMPRAR"
+            android:textColor="@color/colorWhite"></Button>
     </RelativeLayout>
 </RelativeLayout>
 

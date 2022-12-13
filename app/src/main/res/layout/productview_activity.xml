@@ -4,18 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/app_background"
+    android:background="#bce7c9"
     tools:context="com.example.myar.MainActivity">
 
     <Toolbar
         android:id="@+id/toolbarTop"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
+        android:background="#55b50d"
         android:titleTextColor="@color/colorWhite"
-        android:background="@drawable/side_nav_bar2"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
         app:theme="@style/Theme.AppCompat.Light.NoActionBar">
 
@@ -29,45 +29,47 @@
         android:id="@+id/product_frame">
 
         <com.github.siyamed.shapeimageview.RoundedImageView
+            android:id="@+id/product_image"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_centerHorizontal="true"
-            app:siRadius="10dp"
-            app:siBorderWidth="4dp"
-            app:siBorderColor="@color/colorProductBackground"
-            app:siSquare="true"
+            android:cropToPadding="true"
             android:padding="10dp"
             android:scaleType="centerCrop"
-            android:cropToPadding="true"
-            android:id="@+id/product_image"
-            android:src="@drawable/my_border" />
+            android:src="@drawable/my_border"
+            app:siBorderColor="@color/colorProductBackground"
+            app:siBorderWidth="4dp"
+            app:siRadius="10dp"
+            app:siSquare="true" />
     </RelativeLayout>
 
-    <TextView
-        android:textStyle="bold"
-        android:textSize="20dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/product_frame"
-        android:layout_marginTop="20dp"
-        android:text="Product Name"
-        android:id="@+id/product_name">
-    </TextView>
+
 
     <TextView
-        android:textStyle="italic"
+        android:id="@+id/product_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/product_frame"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/product_name"
         android:layout_marginTop="20dp"
-        android:layout_margin="30dp"
-        android:textSize="17sp"
+        android:text="Product Name"
+        android:textSize="20dp"
+        android:textStyle="bold"></TextView>
+
+    <TextView
+        android:id="@+id/product_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/product_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
         android:text="Here contains the description of the product. It presents the detail of product listed from the ListView item list."
         android:textAlignment="center"
-        android:id="@+id/product_description">
-    </TextView>
+        android:textSize="17sp"
+        android:textStyle="italic"></TextView>
 
 
     <Toolbar
@@ -75,7 +77,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:background="@drawable/side_nav_bar2"
         app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
         <RelativeLayout
             android:layout_width="match_parent"
@@ -85,22 +86,21 @@
                 android:id="@+id/product_price"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_centerVertical="true"
+                android:layout_centerInParent="true"
+                android:scrollbarStyle="insideInset"
                 android:text="20 €"
-                android:textStyle="italic"
+                android:textColor="@color/black"
                 android:textSize="18dp"
-                android:textColor="@color/colorWhite"
-                android:scrollbarStyle="insideInset">
-             </TextView>
+                android:textStyle="italic"></TextView>
 
             <Button
                 android:layout_width="90dp"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:layout_marginRight="85dp"
-                android:text="Preview"
+                android:text="Ver con AR"
                 android:textSize="12dp"
+                android:background="#55b50d"
                 android:id="@+id/previewButton"
                 android:layout_centerVertical="true">
             </Button>
@@ -113,7 +113,8 @@
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
                 android:layout_marginLeft="85dp"
-                android:text="Add to cart"
+                android:background="#55b50d"
+                android:text="Agregar al carrito"
                 android:textSize="10dp">
 
             </Button>

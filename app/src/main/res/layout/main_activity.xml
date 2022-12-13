@@ -15,15 +15,13 @@
         android:layout_height="wrap_content"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
-        android:background="@drawable/side_nav_bar2"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-        app:theme="@style/ThemeOverlay.AppCompat.Dark" />
+        android:background="#55b50d" />
 
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/tabLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/side_nav_bar2"
+            android:background="#55b50d"
             app:tabSelectedTextColor="@color/colorWhite"
             app:tabTextColor="@color/black">
 
@@ -31,13 +29,13 @@
                 android:id="@+id/tabProduct"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Product" />
+                android:text="Productos" />
 
             <com.google.android.material.tabs.TabItem
                 android:id="@+id/tabAccount"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Account" />
+                android:text="Ferias" />
         </com.google.android.material.tabs.TabLayout>
 
     <androidx.viewpager.widget.ViewPager
