@@ -12,7 +12,7 @@
         android:layout_height="40dp"
         android:layout_centerHorizontal="true"
         android:layout_gravity="end"
-        android:text="Clear"
+        android:text="Borrar"
         android:layout_margin="11dp"
         android:background="@drawable/my_border2"
         android:textColor="@color/colorWhite" />

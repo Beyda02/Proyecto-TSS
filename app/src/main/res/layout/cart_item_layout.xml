@@ -58,7 +58,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Plant"
+                android:text="Planta"
                 android:textSize="18dp"
                 android:id="@+id/cart_item_name"
                 android:layout_marginTop="7dp"
@@ -72,15 +72,17 @@
                 android:orientation="horizontal">
 
                 <TextView
+                    android:id="@+id/cart_item_price"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
                     android:layout_marginLeft="10dp"
-                    android:text="€10"
-                    android:id="@+id/cart_item_price"
-                    android:layout_margin="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="10 Bs"
                     android:textSize="15dp"
-                    android:textStyle="italic">
-                </TextView>
+                    android:textStyle="italic"></TextView>
 
                 <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
                     android:layout_width="100dp"

@@ -5,6 +5,7 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.content.ContextCompat;
 import androidx.viewpager.widget.ViewPager;
 
+import android.graphics.Color;
 import android.os.Bundle;
 
 import com.example.myar.RoomDatabase.DataSource.CartRepository;
@@ -32,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
 
         toolbar = findViewById(R.id.toolbar);
         toolbar.setTitle(getResources().getString(R.string.app_name));
+        toolbar.setTitleTextColor(Color.WHITE);
         setSupportActionBar(toolbar);
         getWindow().setStatusBarColor(ContextCompat.getColor(MainActivity.this,
                 R.color.colorProductBackground));
@@ -40,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
 
         tabLayout = findViewById(R.id.tabLayout);
         tabProduct = findViewById(R.id.tabProduct);
-        tabAccount = findViewById(R.id.tabAccount);
+        //tabAccount = findViewById(R.id.tabAccount);
         viewPager = findViewById(R.id.viewPager);
 
         sectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager(), tabLayout.getTabCount());

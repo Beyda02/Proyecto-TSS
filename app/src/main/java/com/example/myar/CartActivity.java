@@ -41,7 +41,7 @@ public class CartActivity extends AppCompatActivity implements RecyclerItemTouch
         setContentView(R.layout.cart_layout);
 
         Toolbar cartToolbar = findViewById(R.id.CartToolbar);
-        cartToolbar.setTitle("Cart");
+        cartToolbar.setTitle("Carrito");
         cartToolbar.setTitleTextColor(Color.WHITE);
         setSupportActionBar(cartToolbar);
         getWindow().setStatusBarColor(ContextCompat.getColor(CartActivity.this, R.color.colorProductBackground));

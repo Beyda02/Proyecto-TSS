@@ -53,7 +53,7 @@ public class ProductViewActivity extends FragmentActivity {
             String priceHolder = getIntent().getStringExtra("item Price");
             productPrice.setText(priceHolder);
 
-            productToolbar.setTitle("Detail");
+            productToolbar.setTitle("Detalles");
             setActionBar(productToolbar);
             getWindow().setStatusBarColor(ContextCompat.getColor(ProductViewActivity.this, R.color.colorProductBackground));
 
