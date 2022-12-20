@@ -21,7 +21,6 @@ public class MainActivity extends AppCompatActivity {
     ViewPager viewPager;
     SectionsPagerAdapter sectionsPagerAdapter;
     TabItem tabProduct;
-    TabItem tabAccount;
 
     public static CartDatabase cartDatabase;
     public static CartRepository cartRepository;
@@ -42,7 +41,6 @@ public class MainActivity extends AppCompatActivity {
 
         tabLayout = findViewById(R.id.tabLayout);
         tabProduct = findViewById(R.id.tabProduct);
-        //tabAccount = findViewById(R.id.tabAccount);
         viewPager = findViewById(R.id.viewPager);
 
         sectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager(), tabLayout.getTabCount());
@@ -53,18 +51,17 @@ public class MainActivity extends AppCompatActivity {
             public void onTabSelected(TabLayout.Tab tab) {
                 viewPager.setCurrentItem(tab.getPosition());
                 if (tab.getPosition() == 1) {
-                    toolbar.setBackground(ContextCompat.getDrawable(MainActivity.this,
-                            R.drawable.side_nav_bar3));
+                    toolbar.setBackground(ContextCompat.getDrawable(MainActivity.this, R.color.colorToolbar1));
                     tabLayout.setBackground(ContextCompat.getDrawable(MainActivity.this,
-                            R.drawable.side_nav_bar3));
+                            R.color.colorToolbar1));
                     getWindow().setStatusBarColor(ContextCompat.getColor(MainActivity.this,
                             R.color.colorToolbar2));
 
                 } else {
                     toolbar.setBackground(ContextCompat.getDrawable(MainActivity.this,
-                            R.drawable.side_nav_bar2));
+                            R.color.colorToolbar1));
                     tabLayout.setBackground(ContextCompat.getDrawable(MainActivity.this,
-                            R.drawable.side_nav_bar2));
+                            R.color.colorToolbar1));
                     getWindow().setStatusBarColor(ContextCompat.getColor(MainActivity.this,
                             R.color.colorProductBackground));
                 }

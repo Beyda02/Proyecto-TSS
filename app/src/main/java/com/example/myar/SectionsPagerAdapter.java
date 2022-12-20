@@ -21,8 +21,6 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
         switch (position) {
             case 0:
                 return new ProductFragment();
-            case 1:
-                return new AccountFragment();
             default:
                 return null;
         }

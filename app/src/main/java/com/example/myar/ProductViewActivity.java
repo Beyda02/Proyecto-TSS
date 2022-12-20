@@ -89,7 +89,6 @@ public class ProductViewActivity extends FragmentActivity {
             Cart cartItem = new Cart();
             cartItem.name = productName.getText().toString();
             cartItem.amount = 1;
-          //  cartItem.description = productDesc.getText().toString();
             cartItem.price = productPrice.getText().toString();
             cartItem.image = getIntent().getExtras().getString("item Images");
 
